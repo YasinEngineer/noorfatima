@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Noor-e-Fatima Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { academy: { blue: '#1e3a8a', gold: '#fbbf24', light: '#f8fafc', gray: '#475569' } } } } }</script>
+    <link rel="stylesheet" href="css/style.css"><script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-academy-light text-gray-800 flex flex-col min-h-screen">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-3"><i data-lucide="book-open" class="h-8 w-8 text-academy-blue"></i><div><h1 class="font-serif font-bold text-xl text-academy-blue leading-tight">Noor-e-Fatima</h1><p class="text-xs text-gray-500 font-medium uppercase tracking-wider">Academy</p></div></a>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Home</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">About Us</a>
+                    <a href="programs.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Programs</a>
+                    <a href="faculty.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Faculty</a>
+                    <a href="admissions.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Admissions</a>
+                    <a href="results.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Results</a>
+                    <a href="gallery.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Gallery</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Contact</a>
+                </nav>
+                <div class="md:hidden flex items-center"><button id="mobile-menu-btn" class="text-gray-600 hover:text-academy-blue focus:outline-none"><i data-lucide="menu" class="h-6 w-6"></i></button></div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Home</a>
+                <a href="gallery.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Gallery</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <div class="bg-academy-blue text-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="font-serif text-4xl font-bold mb-4">Campus Gallery</h1>
+                <p class="text-blue-200 max-w-2xl mx-auto">A glimpse into the vibrant life, classrooms, and events at our academy.</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                
+                <!-- Gallery Item 1 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-md cursor-pointer hover-scale">
+                    <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=600&h=400" alt="Classroom" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-academy-blue bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+                        <p class="text-white font-bold text-lg opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Modern Classrooms</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-md cursor-pointer hover-scale">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=600&h=400" alt="Students studying" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-academy-blue bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+                        <p class="text-white font-bold text-lg opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Library & Study Area</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-md cursor-pointer hover-scale">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=600&h=400" alt="Campus Building" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-academy-blue bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+                        <p class="text-white font-bold text-lg opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Main Campus</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 (Placeholder) -->
+                <div class="group relative overflow-hidden rounded-xl shadow-md cursor-pointer hover-scale bg-gray-200 flex items-center justify-center">
+                    <div class="text-center p-4">
+                        <i data-lucide="image" class="h-12 w-12 text-gray-400 mx-auto mb-2"></i>
+                        <span class="text-gray-500 font-medium">Add Photo Here</span>
+                    </div>
+                    <div class="absolute inset-0 bg-academy-blue bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+                        <p class="text-white font-bold text-lg opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Annual Prize Distribution</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 (Placeholder) -->
+                <div class="group relative overflow-hidden rounded-xl shadow-md cursor-pointer hover-scale bg-gray-200 flex items-center justify-center">
+                    <div class="text-center p-4">
+                        <i data-lucide="image" class="h-12 w-12 text-gray-400 mx-auto mb-2"></i>
+                        <span class="text-gray-500 font-medium">Add Photo Here</span>
+                    </div>
+                    <div class="absolute inset-0 bg-academy-blue bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+                        <p class="text-white font-bold text-lg opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Science Lab</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 (Placeholder) -->
+                <div class="group relative overflow-hidden rounded-xl shadow-md cursor-pointer hover-scale bg-gray-200 flex items-center justify-center">
+                    <div class="text-center p-4">
+                        <i data-lucide="image" class="h-12 w-12 text-gray-400 mx-auto mb-2"></i>
+                        <span class="text-gray-500 font-medium">Add Photo Here</span>
+                    </div>
+                    <div class="absolute inset-0 bg-academy-blue bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+                        <p class="text-white font-bold text-lg opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Student Trip</p>
+                    </div>
+                </div>
+
+            </div>
+            
+
+
+        </div>
+    </main>
+
+    <footer class="bg-academy-blue text-white mt-auto py-6 text-center border-t border-blue-800 text-sm text-blue-300">
+        <p>&copy; 2026 Noor-e-Fatima Academy.</p>
+    </footer>
+    <script src="js/main.js"></script><script>lucide.createIcons();</script>
+</body>
+</html>

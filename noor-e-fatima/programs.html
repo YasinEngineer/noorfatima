@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs | Noor-e-Fatima Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { academy: { blue: '#1e3a8a', gold: '#fbbf24', light: '#f8fafc', gray: '#475569' } } } } }</script>
+    <link rel="stylesheet" href="css/style.css"><script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-academy-light text-gray-800 flex flex-col min-h-screen">
+
+    <!-- HEADER -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-3"><i data-lucide="book-open" class="h-8 w-8 text-academy-blue"></i><div><h1 class="font-serif font-bold text-xl text-academy-blue leading-tight">Noor-e-Fatima</h1><p class="text-xs text-gray-500 font-medium uppercase tracking-wider">Academy</p></div></a>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Home</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">About Us</a>
+                    <a href="programs.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Programs</a>
+                    <a href="faculty.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Faculty</a>
+                    <a href="admissions.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Admissions</a>
+                    <a href="results.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Results</a>
+                    <a href="gallery.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Gallery</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Contact</a>
+                </nav>
+                <div class="md:hidden flex items-center"><button id="mobile-menu-btn" class="text-gray-600 hover:text-academy-blue focus:outline-none"><i data-lucide="menu" class="h-6 w-6"></i></button></div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Home</a>
+                <a href="about.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">About Us</a>
+                <a href="programs.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Programs</a>
+                <a href="faculty.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Faculty</a>
+                <a href="admissions.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Admissions</a>
+                <a href="results.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Results</a>
+                <a href="gallery.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Gallery</a>
+                <a href="contact.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Page Header -->
+        <div class="bg-academy-blue text-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="font-serif text-4xl font-bold mb-4">Academic Programs</h1>
+                <p class="text-blue-200 max-w-2xl mx-auto">Tailored coaching for every stage of your educational journey.</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            
+            <!-- Middle School -->
+            <div id="middle" class="bg-white rounded-xl shadow-md overflow-hidden mb-12 border-t-4 border-academy-blue">
+                <div class="md:flex">
+                    <div class="md:w-1/3 bg-blue-50 p-8 flex flex-col justify-center items-center text-center">
+                        <i data-lucide="backpack" class="h-16 w-16 text-academy-blue mb-4"></i>
+                        <h2 class="font-serif text-2xl font-bold text-gray-900 mb-2">Middle School</h2>
+                        <span class="inline-block bg-academy-blue text-white px-3 py-1 rounded-full text-sm font-medium">Grades 6 - 8</span>
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Program Overview</h3>
+                        <p class="text-gray-600 mb-6">Our middle school program is designed to build a strong foundation in core subjects, ensuring students are well-prepared for the rigors of high school. We focus on conceptual clarity over rote memorization.</p>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-bold text-gray-900 flex items-center gap-2 mb-2"><i data-lucide="book" class="h-4 w-4 text-academy-blue"></i> Subjects Covered</h4>
+                                <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                                    <li>Mathematics</li>
+                                    <li>General Science</li>
+                                    <li>English Language & Grammar</li>
+                                    <li>Urdu</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 flex items-center gap-2 mb-2"><i data-lucide="clock" class="h-4 w-4 text-academy-blue"></i> Schedule & Details</h4>
+                                <ul class="text-gray-600 text-sm space-y-1">
+                                    <li><span class="font-medium">Timings:</span> 3:30 PM - 5:30 PM</li>
+                                    <li><span class="font-medium">Days:</span> Monday to Friday</li>
+                                    <li><span class="font-medium">Batch Size:</span> Max 15 students</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Matric / O-Level -->
+            <div id="matric" class="bg-white rounded-xl shadow-md overflow-hidden mb-12 border-t-4 border-academy-gold">
+                <div class="md:flex flex-row-reverse">
+                    <div class="md:w-1/3 bg-yellow-50 p-8 flex flex-col justify-center items-center text-center">
+                        <i data-lucide="award" class="h-16 w-16 text-academy-gold mb-4"></i>
+                        <h2 class="font-serif text-2xl font-bold text-gray-900 mb-2">Matric / O-Level</h2>
+                        <span class="inline-block bg-academy-gold text-academy-blue px-3 py-1 rounded-full text-sm font-medium">Classes 9-10 / O1-O3</span>
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Program Overview</h3>
+                        <p class="text-gray-600 mb-6">This crucial stage defines a student's future academic path. We offer intensive preparation with a strong focus on board patterns and Cambridge assessment objectives, coupled with extensive past paper practice.</p>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-bold text-gray-900 flex items-center gap-2 mb-2"><i data-lucide="book" class="h-4 w-4 text-academy-gold"></i> Subjects Covered</h4>
+                                <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                                    <li>Physics, Chemistry, Biology</li>
+                                    <li>Mathematics & Add Math</li>
+                                    <li>Computer Science</li>
+                                    <li>English, Urdu, Islamiyat</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 flex items-center gap-2 mb-2"><i data-lucide="clock" class="h-4 w-4 text-academy-gold"></i> Schedule & Details</h4>
+                                <ul class="text-gray-600 text-sm space-y-1">
+                                    <li><span class="font-medium">Timings:</span> 4:00 PM - 7:00 PM</li>
+                                    <li><span class="font-medium">Test Series:</span> Every Saturday</li>
+                                    <li><span class="font-medium">Batch Size:</span> Max 20 students</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inter / A-Level -->
+            <div id="inter" class="bg-white rounded-xl shadow-md overflow-hidden mb-16 border-t-4 border-academy-blue">
+                <div class="md:flex">
+                    <div class="md:w-1/3 bg-blue-50 p-8 flex flex-col justify-center items-center text-center">
+                        <i data-lucide="graduation-cap" class="h-16 w-16 text-academy-blue mb-4"></i>
+                        <h2 class="font-serif text-2xl font-bold text-gray-900 mb-2">Inter / A-Level</h2>
+                        <span class="inline-block bg-academy-blue text-white px-3 py-1 rounded-full text-sm font-medium">FSc / ICS / A1-A2</span>
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Program Overview</h3>
+                        <p class="text-gray-600 mb-6">Our flagship program prepares students for top university admissions. Taught by specialized faculty, this program demands rigor. We provide comprehensive notes, guess papers, and entry-test guidance.</p>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-bold text-gray-900 flex items-center gap-2 mb-2"><i data-lucide="book" class="h-4 w-4 text-academy-blue"></i> Subjects Covered</h4>
+                                <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                                    <li>Pre-Medical (Bio, Chem, Phy)</li>
+                                    <li>Pre-Engineering (Math, Chem, Phy)</li>
+                                    <li>ICS (Comp, Math, Phy/Stat)</li>
+                                    <li>A-Level Sciences & Business</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 flex items-center gap-2 mb-2"><i data-lucide="clock" class="h-4 w-4 text-academy-blue"></i> Schedule & Details</h4>
+                                <ul class="text-gray-600 text-sm space-y-1">
+                                    <li><span class="font-medium">Timings:</span> 5:00 PM - 8:30 PM</li>
+                                    <li><span class="font-medium">Test Series:</span> Bi-weekly Grand Tests</li>
+                                    <li><span class="font-medium">Mentorship:</span> Career counseling included</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-academy-blue text-white mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-4"><i data-lucide="book-open" class="h-6 w-6 text-academy-gold"></i><h2 class="font-serif font-bold text-xl text-white">Noor-e-Fatima</h2></div>
+                    <p class="text-blue-200 text-sm mb-4">Empowering minds, shaping futures.</p>
+                </div>
+                <div>
+                    <h3 class="font-serif font-semibold text-lg mb-4 text-academy-gold">Quick Links</h3>
+                    <ul class="space-y-2 text-sm text-blue-200">
+                        <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="programs.html" class="hover:text-white transition-colors">Programs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-serif font-semibold text-lg mb-4 text-academy-gold">Contact Us</h3>
+                    <ul class="space-y-2 text-sm text-blue-200">
+                        <li class="flex items-start gap-2"><i data-lucide="map-pin" class="h-4 w-4 mt-1 flex-shrink-0"></i><span>Sukkur IBA University, Sukkur</span></li>
+                        <li class="flex items-center gap-2"><i data-lucide="phone" class="h-4 w-4 flex-shrink-0"></i><span>+92 312 4391708</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center text-sm text-blue-300"><p>&copy; 2026 Noor-e-Fatima Academy. All rights reserved.</p></div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script><script>lucide.createIcons();</script>
+</body>
+</html>

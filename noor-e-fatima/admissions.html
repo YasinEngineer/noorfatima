@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | Noor-e-Fatima Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { academy: { blue: '#1e3a8a', gold: '#fbbf24', light: '#f8fafc', gray: '#475569' } } } } }</script>
+    <link rel="stylesheet" href="css/style.css"><script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-academy-light text-gray-800 flex flex-col min-h-screen">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-3"><i data-lucide="book-open" class="h-8 w-8 text-academy-blue"></i><div><h1 class="font-serif font-bold text-xl text-academy-blue leading-tight">Noor-e-Fatima</h1><p class="text-xs text-gray-500 font-medium uppercase tracking-wider">Academy</p></div></a>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Home</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">About Us</a>
+                    <a href="programs.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Programs</a>
+                    <a href="faculty.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Faculty</a>
+                    <a href="admissions.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Admissions</a>
+                    <a href="results.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Results</a>
+                    <a href="gallery.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Gallery</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Contact</a>
+                </nav>
+                <div class="md:hidden flex items-center"><button id="mobile-menu-btn" class="text-gray-600 hover:text-academy-blue focus:outline-none"><i data-lucide="menu" class="h-6 w-6"></i></button></div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Home</a>
+                <a href="admissions.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Admissions</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <div class="bg-academy-blue text-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="font-serif text-4xl font-bold mb-4">Admissions</h1>
+                <p class="text-blue-200 max-w-2xl mx-auto">Join the tradition of excellence. Start your admission process today.</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Admission Process -->
+                <div>
+                    <h2 class="font-serif text-3xl font-bold text-academy-blue mb-8">Admission Process</h2>
+                    
+                    <div class="space-y-8">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-10 h-10 rounded-full bg-academy-gold text-academy-blue font-bold flex items-center justify-center text-lg shadow-md">1</div>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl text-gray-900 mb-2">Submit Inquiry Form</h3>
+                                <p class="text-gray-600">Fill out the inquiry form on this page or visit our campus. Our team will contact you to discuss your academic needs and recommend the right program.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-10 h-10 rounded-full bg-academy-blue text-white font-bold flex items-center justify-center text-lg shadow-md">2</div>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl text-gray-900 mb-2">Free Trial Class</h3>
+                                <p class="text-gray-600">We encourage students to take a 2-day free trial class to experience our teaching methodology and campus environment before committing.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-10 h-10 rounded-full bg-academy-blue text-white font-bold flex items-center justify-center text-lg shadow-md">3</div>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl text-gray-900 mb-2">Registration & Assessment</h3>
+                                <p class="text-gray-600">Submit required documents (previous result cards, ID copy) and complete the registration form. A brief assessment may be conducted for O-Level/A-Level students.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-10 h-10 rounded-full bg-academy-blue text-white font-bold flex items-center justify-center text-lg shadow-md">4</div>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl text-gray-900 mb-2">Free Enrollment Confirmation</h3>
+                                <p class="text-gray-600">Secure your seat completely free of cost. You will be provided with a student ID and your batch schedule to start learning immediately.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 bg-blue-50 p-6 rounded-xl border border-blue-100">
+                        <h4 class="font-bold text-gray-900 flex items-center gap-2 mb-4"><i data-lucide="file-text" class="h-5 w-5 text-academy-blue"></i> Required Documents</h4>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>2 Passport size photographs</li>
+                            <li>Copy of Student's B-Form / CNIC</li>
+                            <li>Copy of Parent's / Guardian's CNIC</li>
+                            <li>Copy of latest school result card</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Inquiry Form -->
+                <div>
+                    <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-academy-gold sticky top-24">
+                        <h3 class="font-serif text-2xl font-bold text-gray-900 mb-2">Admission Inquiry</h3>
+                        <p class="text-gray-500 mb-6 text-sm">Fill this out to book your free trial class or get a callback.</p>
+                        
+                        <div id="admission-success" class="hidden bg-green-50 text-green-800 p-4 rounded-md mb-6 border border-green-200">
+                            <div class="flex items-center gap-2 font-bold mb-1"><i data-lucide="check-circle" class="h-5 w-5"></i> Inquiry Submitted!</div>
+                            <p class="text-sm">Thank you! Our admission counselor will call you within 24 hours.</p>
+                        </div>
+
+                        <form id="admission-form" class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Student's Full Name</label>
+                                <input type="text" required class="form-input" placeholder="e.g. Fatima Ali">
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Parent's Phone</label>
+                                    <input type="tel" required class="form-input" placeholder="0300-0000000">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Email (Optional)</label>
+                                    <input type="email" class="form-input" placeholder="parent@example.com">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Grade / Level</label>
+                                    <select class="form-input" required>
+                                        <option value="" disabled selected>Select level</option>
+                                        <option>Middle (6-8)</option>
+                                        <option>Matric (9-10)</option>
+                                        <option>O-Level</option>
+                                        <option>FSc / ICS</option>
+                                        <option>A-Level</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Current School</label>
+                                    <input type="text" class="form-input" placeholder="e.g. LGS, Beaconhouse">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Subjects Interested In (Optional)</label>
+                                <input type="text" class="form-input" placeholder="e.g. Physics, Chemistry, Math">
+                            </div>
+                            <button type="submit" class="w-full bg-academy-blue text-white font-bold py-3 rounded-md hover:bg-blue-900 transition-colors shadow-md mt-4">
+                                Book Free Trial Class
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-academy-blue text-white mt-auto py-6 text-center border-t border-blue-800 text-sm text-blue-300">
+        <p>&copy; 2026 Noor-e-Fatima Academy.</p>
+    </footer>
+    <script src="js/main.js"></script><script>lucide.createIcons();</script>
+</body>
+</html>

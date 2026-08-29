@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Noor-e-Fatima Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { academy: { blue: '#1e3a8a', gold: '#fbbf24', light: '#f8fafc', gray: '#475569' } } } } }</script>
+    <link rel="stylesheet" href="css/style.css"><script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-academy-light text-gray-800 flex flex-col min-h-screen">
+
+    <!-- HEADER -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-3"><i data-lucide="book-open" class="h-8 w-8 text-academy-blue"></i><div><h1 class="font-serif font-bold text-xl text-academy-blue leading-tight">Noor-e-Fatima</h1><p class="text-xs text-gray-500 font-medium uppercase tracking-wider">Academy</p></div></a>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Home</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">About Us</a>
+                    <a href="programs.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Programs</a>
+                    <a href="faculty.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Faculty</a>
+                    <a href="admissions.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Admissions</a>
+                    <a href="results.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Results</a>
+                    <a href="gallery.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Gallery</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Contact</a>
+                </nav>
+                <div class="md:hidden flex items-center"><button id="mobile-menu-btn" class="text-gray-600 hover:text-academy-blue focus:outline-none"><i data-lucide="menu" class="h-6 w-6"></i></button></div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Home</a>
+                <a href="contact.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Page Header -->
+        <div class="bg-academy-blue text-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="font-serif text-4xl font-bold mb-4">Contact Us</h1>
+                <p class="text-blue-200 max-w-2xl mx-auto">We are here to answer any questions you may have about our programs, admissions, or faculty.</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Contact Information -->
+                <div>
+                    <h2 class="font-serif text-3xl font-bold text-academy-blue mb-6">Get In Touch</h2>
+                    <p class="text-gray-600 mb-8">Visit our campus for a detailed counseling session or reach out to us via phone or email.</p>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-50 p-3 rounded-full"><i data-lucide="map-pin" class="h-6 w-6 text-academy-blue"></i></div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Campus Address</h4>
+                                <p class="text-gray-600">Sukkur IBA University<br>Airport Road, Sukkur, Sindh, Pakistan</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-50 p-3 rounded-full"><i data-lucide="phone" class="h-6 w-6 text-academy-blue"></i></div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Phone & WhatsApp</h4>
+                                <p class="text-gray-600">+92 312 4391708 (Call & WhatsApp)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-50 p-3 rounded-full"><i data-lucide="mail" class="h-6 w-6 text-academy-blue"></i></div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Email Address</h4>
+                                <p class="text-gray-600">engineeryasin2029@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-50 p-3 rounded-full"><i data-lucide="clock" class="h-6 w-6 text-academy-blue"></i></div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Office Hours</h4>
+                                <p class="text-gray-600">Monday - Saturday: 2:00 PM to 9:00 PM<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="font-serif text-xl font-bold text-gray-900 mb-4">Follow Us</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://youtube.com/@engineer_yasin?si=4Du0AQ-ca9ffW3Ek" target="_blank" class="bg-gray-100 p-3 rounded-full text-academy-blue hover:bg-academy-blue hover:text-white transition-colors"><i data-lucide="youtube" class="h-5 w-5"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammad-yasin-595633384" target="_blank" class="bg-gray-100 p-3 rounded-full text-academy-blue hover:bg-academy-blue hover:text-white transition-colors"><i data-lucide="linkedin" class="h-5 w-5"></i></a>
+                        <a href="https://github.com/Muhammad-Yasin-EE" target="_blank" class="bg-gray-100 p-3 rounded-full text-academy-blue hover:bg-academy-blue hover:text-white transition-colors"><i data-lucide="github" class="h-5 w-5"></i></a>
+                        <a href="https://chat.whatsapp.com/IzPd4vwXbrjGhAkanhYvTp" target="_blank" class="bg-gray-100 p-3 rounded-full text-academy-blue hover:bg-academy-blue hover:text-white transition-colors"><i data-lucide="message-square" class="h-5 w-5"></i></a>
+                        <a href="https://whatsapp.com/channel/0029Vb8VePo0QeakhuHAtn14" target="_blank" class="bg-gray-100 p-3 rounded-full text-academy-blue hover:bg-academy-blue hover:text-white transition-colors"><i data-lucide="hash" class="h-5 w-5"></i></a>
+                        <a href="https://www.fiverr.com/s/gDA4d19" target="_blank" class="bg-gray-100 p-3 rounded-full text-academy-blue hover:bg-academy-blue hover:text-white transition-colors"><i data-lucide="briefcase" class="h-5 w-5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="font-serif text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
+                    
+                    <div id="form-success" class="hidden bg-green-50 text-green-800 p-4 rounded-md mb-6 border border-green-200">
+                        <div class="flex items-center gap-2 font-bold mb-1"><i data-lucide="check-circle" class="h-5 w-5"></i> Message Sent Successfully!</div>
+                        <p class="text-sm">Thank you for reaching out. Our admissions team will get back to you shortly.</p>
+                    </div>
+
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                            <input type="text" required class="form-input" placeholder="e.g. Ali Ahmed">
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Phone / WhatsApp</label>
+                                <input type="tel" required class="form-input" placeholder="0300-0000000">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Email (Optional)</label>
+                                <input type="email" class="form-input" placeholder="ali@example.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Interested In</label>
+                            <select class="form-input" required>
+                                <option value="" disabled selected>Select a program</option>
+                                <option value="middle">Middle School (6-8)</option>
+                                <option value="matric">Matriculation (9-10)</option>
+                                <option value="olevel">O-Level</option>
+                                <option value="fsc">FSc / ICS</option>
+                                <option value="alevel">A-Level</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
+                            <textarea rows="4" required class="form-input resize-none" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-academy-blue text-white font-bold py-3 rounded-md hover:bg-blue-900 transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Google Map -->
+            <div class="mt-16">
+                <h3 class="font-serif text-2xl font-bold text-gray-900 mb-6 text-center">Find Us on the Map</h3>
+                <div class="w-full h-96 rounded-xl overflow-hidden shadow-md border border-gray-200">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.854083754944!2d68.80789721505374!3d27.72179838278553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3935d49a37c86a07%3A0xc39eb87e91d09e53!2sSukkur%20IBA%20University!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-academy-blue text-white mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center border-t border-blue-800 text-sm text-blue-300">
+            <p>&copy; 2026 Noor-e-Fatima Academy. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script><script>lucide.createIcons();</script>
+</body>
+</html>

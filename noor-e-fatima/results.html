@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results & Success | Noor-e-Fatima Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { academy: { blue: '#1e3a8a', gold: '#fbbf24', light: '#f8fafc', gray: '#475569' } } } } }</script>
+    <link rel="stylesheet" href="css/style.css"><script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-academy-light text-gray-800 flex flex-col min-h-screen">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-3"><i data-lucide="book-open" class="h-8 w-8 text-academy-blue"></i><div><h1 class="font-serif font-bold text-xl text-academy-blue leading-tight">Noor-e-Fatima</h1><p class="text-xs text-gray-500 font-medium uppercase tracking-wider">Academy</p></div></a>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Home</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">About Us</a>
+                    <a href="programs.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Programs</a>
+                    <a href="faculty.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Faculty</a>
+                    <a href="admissions.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Admissions</a>
+                    <a href="results.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Results</a>
+                    <a href="gallery.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Gallery</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Contact</a>
+                </nav>
+                <div class="md:hidden flex items-center"><button id="mobile-menu-btn" class="text-gray-600 hover:text-academy-blue focus:outline-none"><i data-lucide="menu" class="h-6 w-6"></i></button></div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Home</a>
+                <a href="results.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Results</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <div class="bg-academy-blue text-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="font-serif text-4xl font-bold mb-4">Our Results</h1>
+                <p class="text-blue-200 max-w-2xl mx-auto">Consistent top performance year after year. We measure our success by the success of our students.</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            
+            <!-- Hall of Fame -->
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl font-bold text-academy-blue mb-4"><i data-lucide="trophy" class="h-8 w-8 inline-block text-academy-gold mr-2"></i>Hall of Fame (2025)</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Outstanding performers from the recent board and Cambridge examinations.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-20">
+                <!-- Top Student 1 -->
+                <div class="bg-white rounded-xl shadow-lg border-2 border-academy-gold p-6 text-center relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-academy-gold text-academy-blue font-bold px-3 py-1 rounded-bl-lg text-sm">Top Position</div>
+                    <div class="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 border-4 border-white shadow-md overflow-hidden">
+                        <i data-lucide="user" class="h-full w-full text-gray-400 p-4"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-900 mb-1">Muhammad Abdullah</h3>
+                    <p class="text-academy-blue font-medium mb-2">Matric (Science)</p>
+                    <div class="bg-blue-50 py-2 rounded-md mb-4">
+                        <p class="font-serif text-2xl font-bold text-academy-blue">1085 / 1100</p>
+                    </div>
+                    <p class="text-gray-600 text-sm italic">"The test sessions at Noor-e-Fatima gave me the confidence to ace my final exams."</p>
+                </div>
+
+                <!-- Top Student 2 -->
+                <div class="bg-white rounded-xl shadow-lg border-t-4 border-academy-blue p-6 text-center relative">
+                    <div class="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 border-4 border-white shadow-md overflow-hidden">
+                        <i data-lucide="user" class="h-full w-full text-gray-400 p-4"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-900 mb-1">Ayesha Khan</h3>
+                    <p class="text-academy-blue font-medium mb-2">FSc Pre-Medical</p>
+                    <div class="bg-blue-50 py-2 rounded-md mb-4">
+                        <p class="font-serif text-2xl font-bold text-academy-blue">1050 / 1100</p>
+                    </div>
+                    <p class="text-gray-600 text-sm italic">"Excellent faculty and conceptual clarity. I secured my admission in KEMU!"</p>
+                </div>
+
+                <!-- Top Student 3 -->
+                <div class="bg-white rounded-xl shadow-lg border-t-4 border-academy-blue p-6 text-center relative">
+                    <div class="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 border-4 border-white shadow-md overflow-hidden">
+                        <i data-lucide="user" class="h-full w-full text-gray-400 p-4"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-900 mb-1">Zainab Tariq</h3>
+                    <p class="text-academy-blue font-medium mb-2">O-Level (Science)</p>
+                    <div class="bg-blue-50 py-2 rounded-md mb-4">
+                        <p class="font-serif text-2xl font-bold text-academy-blue">8 A*s</p>
+                    </div>
+                    <p class="text-gray-600 text-sm italic">"Their past paper methodology is unmatched. Highly recommended."</p>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="bg-blue-50 rounded-2xl p-8 md:p-12">
+                <h2 class="font-serif text-3xl font-bold text-academy-blue mb-8 text-center">What Parents Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-sm relative">
+                        <i data-lucide="quote" class="absolute top-4 right-4 h-8 w-8 text-gray-200"></i>
+                        <p class="text-gray-700 italic mb-4">"I sent both my sons to Noor-e-Fatima for their Matric and Inter. The discipline and dedication of the teachers here is remarkable. They don't treat it as a business, but as a responsibility."</p>
+                        <p class="font-bold text-gray-900">Mrs. Farooq</p>
+                        <p class="text-gray-500 text-sm">Mother of Ali and Usman</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm relative">
+                        <i data-lucide="quote" class="absolute top-4 right-4 h-8 w-8 text-gray-200"></i>
+                        <p class="text-gray-700 italic mb-4">"We struggled to find a good coaching center for O-Levels that focuses on concepts rather than cramming. Finding this academy was a blessing. My daughter's grades improved drastically in just 3 months."</p>
+                        <p class="font-bold text-gray-900">Dr. Shafqat</p>
+                        <p class="text-gray-500 text-sm">Father of Hania</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-academy-blue text-white mt-auto py-6 text-center border-t border-blue-800 text-sm text-blue-300">
+        <p>&copy; 2026 Noor-e-Fatima Academy.</p>
+    </footer>
+    <script src="js/main.js"></script><script>lucide.createIcons();</script>
+</body>
+</html>

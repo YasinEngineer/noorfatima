@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Noor-e-Fatima Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        academy: {
+                            blue: '#1e3a8a',
+                            gold: '#fbbf24',
+                            light: '#f8fafc',
+                            gray: '#475569'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-academy-light text-gray-800 flex flex-col min-h-screen">
+
+    <!-- HEADER -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <i data-lucide="book-open" class="h-8 w-8 text-academy-blue"></i>
+                        <div>
+                            <h1 class="font-serif font-bold text-xl text-academy-blue leading-tight">Noor-e-Fatima</h1>
+                            <p class="text-xs text-gray-500 font-medium uppercase tracking-wider">Academy</p>
+                        </div>
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Home</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">About Us</a>
+                    <a href="programs.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Programs</a>
+                    <a href="faculty.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Faculty</a>
+                    <a href="admissions.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Admissions</a>
+                    <a href="results.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Results</a>
+                    <a href="gallery.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Gallery</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Contact</a>
+                </nav>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-academy-blue focus:outline-none">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Home</a>
+                <a href="about.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">About Us</a>
+                <a href="programs.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Programs</a>
+                <a href="faculty.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Faculty</a>
+                <a href="admissions.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Admissions</a>
+                <a href="results.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Results</a>
+                <a href="gallery.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Gallery</a>
+                <a href="contact.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative bg-academy-blue text-white overflow-hidden">
+            <div class="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80')] bg-cover bg-center"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 relative z-10 flex flex-col md:flex-row items-center">
+                <div class="md:w-3/5 text-center md:text-left mb-10 md:mb-0">
+                    <h1 class="font-serif text-4xl md:text-6xl font-bold leading-tight mb-6">
+                        Excellence in <br><span class="text-academy-gold">Education.</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl">
+                        Nurturing potential, building character, and achieving academic brilliance from Middle School through A-Levels. Your trusted partner in your child's success.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="admissions.html" class="bg-academy-gold text-academy-blue font-bold px-8 py-3 rounded-md hover:bg-yellow-400 transition-colors shadow-lg text-center">
+                            Apply for Admission
+                        </a>
+                        <a href="programs.html" class="bg-transparent border-2 border-white text-white font-bold px-8 py-3 rounded-md hover:bg-white hover:text-academy-blue transition-colors text-center">
+                            Explore Programs
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-2/5 flex justify-center">
+                    <!-- Placeholder for Hero Image/Graphic -->
+                    <div class="bg-white p-4 rounded-xl shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=600" alt="Students studying" class="rounded-lg max-w-full h-auto object-cover w-72 md:w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <p class="font-serif text-4xl font-bold text-academy-blue mb-2">15+</p>
+                        <p class="text-gray-600 font-medium">Years of Experience</p>
+                    </div>
+                    <div>
+                        <p class="font-serif text-4xl font-bold text-academy-blue mb-2">2,500+</p>
+                        <p class="text-gray-600 font-medium">Successful Students</p>
+                    </div>
+                    <div>
+                        <p class="font-serif text-4xl font-bold text-academy-blue mb-2">98%</p>
+                        <p class="text-gray-600 font-medium">Pass Percentage</p>
+                    </div>
+                    <div>
+                        <p class="font-serif text-4xl font-bold text-academy-blue mb-2">50+</p>
+                        <p class="text-gray-600 font-medium">Expert Faculty</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section class="py-20 bg-academy-light">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-academy-blue mb-4">Our Programs</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Comprehensive coaching structured to build strong foundations and achieve top board and Cambridge results.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Middle School -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover-scale border-t-4 border-academy-blue">
+                        <div class="p-8 text-center">
+                            <div class="bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i data-lucide="backpack" class="h-8 w-8 text-academy-blue"></i>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-gray-900 mb-3">Middle School</h3>
+                            <p class="text-academy-blue font-medium mb-4">Grades 6 - 8</p>
+                            <p class="text-gray-600 mb-6 text-sm">Building core concepts in Science, Math, and English to prepare students for rigorous high school studies.</p>
+                            <a href="programs.html#middle" class="text-academy-blue font-bold hover:underline flex items-center justify-center gap-1">View Details <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+                        </div>
+                    </div>
+                    <!-- Matric/O-Level -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover-scale border-t-4 border-academy-gold">
+                        <div class="p-8 text-center">
+                            <div class="bg-yellow-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i data-lucide="award" class="h-8 w-8 text-academy-gold"></i>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-gray-900 mb-3">Matric / O-Level</h3>
+                            <p class="text-academy-blue font-medium mb-4">Classes 9 - 10 / O1 - O3</p>
+                            <p class="text-gray-600 mb-6 text-sm">Intensive board and Cambridge preparation focused on past papers, conceptual clarity, and time management.</p>
+                            <a href="programs.html#matric" class="text-academy-blue font-bold hover:underline flex items-center justify-center gap-1">View Details <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+                        </div>
+                    </div>
+                    <!-- Inter/A-Level -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover-scale border-t-4 border-academy-blue">
+                        <div class="p-8 text-center">
+                            <div class="bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i data-lucide="graduation-cap" class="h-8 w-8 text-academy-blue"></i>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-gray-900 mb-3">Inter / A-Level</h3>
+                            <p class="text-academy-blue font-medium mb-4">FSc / ICS / A1 - A2</p>
+                            <p class="text-gray-600 mb-6 text-sm">Specialized faculty helping students secure top grades for admission into premier medical and engineering universities.</p>
+                            <a href="programs.html#inter" class="text-academy-blue font-bold hover:underline flex items-center justify-center gap-1">View Details <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=800" alt="Academy classroom" class="rounded-xl shadow-lg">
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h2 class="font-serif text-3xl md:text-4xl font-bold text-academy-blue mb-6">Why Choose Noor-e-Fatima?</h2>
+                        <div class="space-y-6">
+                            <div class="flex gap-4">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="bg-blue-50 p-2 rounded-lg"><i data-lucide="users" class="h-6 w-6 text-academy-blue"></i></div>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-gray-900">Highly Qualified Faculty</h4>
+                                    <p class="text-gray-600 text-sm">Our teachers are subject matter experts with years of proven experience in board and Cambridge systems.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="bg-blue-50 p-2 rounded-lg"><i data-lucide="target" class="h-6 w-6 text-academy-blue"></i></div>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-gray-900">Result-Oriented Methodology</h4>
+                                    <p class="text-gray-600 text-sm">Regular testing, comprehensive notes, and rigorous past paper sessions ensure students are exam-ready.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="bg-blue-50 p-2 rounded-lg"><i data-lucide="focus" class="h-6 w-6 text-academy-blue"></i></div>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-gray-900">Small Batch Sizes</h4>
+                                    <p class="text-gray-600 text-sm">We maintain optimal student-to-teacher ratios for personalized attention and better concept clarity.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-academy-gold py-16">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h2 class="font-serif text-3xl font-bold text-academy-blue mb-4">Ready to shape a brighter future?</h2>
+                <p class="text-gray-800 mb-8 font-medium">Admissions for the upcoming academic session are now open.</p>
+                <a href="contact.html" class="inline-block bg-academy-blue text-white font-bold px-8 py-3 rounded-md hover:bg-blue-900 transition-colors shadow-lg">
+                    Contact Us Today
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-academy-blue text-white mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i data-lucide="book-open" class="h-6 w-6 text-academy-gold"></i>
+                        <h2 class="font-serif font-bold text-xl text-white">Noor-e-Fatima</h2>
+                    </div>
+                    <p class="text-blue-200 text-sm mb-4">Empowering minds, shaping futures. A premier coaching academy committed to academic excellence.</p>
+                </div>
+                <div>
+                    <h3 class="font-serif font-semibold text-lg mb-4 text-academy-gold">Quick Links</h3>
+                    <ul class="space-y-2 text-sm text-blue-200">
+                        <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="programs.html" class="hover:text-white transition-colors">Programs</a></li>
+                        <li><a href="admissions.html" class="hover:text-white transition-colors">Admissions</a></li>
+                        <li><a href="results.html" class="hover:text-white transition-colors">Results</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-serif font-semibold text-lg mb-4 text-academy-gold">Contact Us</h3>
+                    <ul class="space-y-2 text-sm text-blue-200">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="map-pin" class="h-4 w-4 mt-1 flex-shrink-0"></i>
+                            <span>Sukkur IBA University, Sukkur</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="phone" class="h-4 w-4 flex-shrink-0"></i>
+                            <span>+92 312 4391708</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="mail" class="h-4 w-4 flex-shrink-0"></i>
+                            <span>engineeryasin2029@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-serif font-semibold text-lg mb-4 text-academy-gold">Follow Us</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://youtube.com/@engineer_yasin?si=4Du0AQ-ca9ffW3Ek" target="_blank" class="text-blue-200 hover:text-white transition-colors"><i data-lucide="youtube" class="h-5 w-5"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammad-yasin-595633384" target="_blank" class="text-blue-200 hover:text-white transition-colors"><i data-lucide="linkedin" class="h-5 w-5"></i></a>
+                        <a href="https://github.com/Muhammad-Yasin-EE" target="_blank" class="text-blue-200 hover:text-white transition-colors"><i data-lucide="github" class="h-5 w-5"></i></a>
+                        <a href="https://chat.whatsapp.com/IzPd4vwXbrjGhAkanhYvTp" target="_blank" class="text-blue-200 hover:text-white transition-colors"><i data-lucide="message-square" class="h-5 w-5"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center text-sm text-blue-300">
+                <p>&copy; 2026 Noor-e-Fatima Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923124391708" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors z-50 flex items-center justify-center">
+        <i data-lucide="message-circle" class="h-6 w-6"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

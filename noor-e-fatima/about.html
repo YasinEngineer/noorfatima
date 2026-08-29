@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Noor-e-Fatima Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { academy: { blue: '#1e3a8a', gold: '#fbbf24', light: '#f8fafc', gray: '#475569' } } } } }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-academy-light text-gray-800 flex flex-col min-h-screen">
+
+    <!-- HEADER (Same as Index) -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <i data-lucide="book-open" class="h-8 w-8 text-academy-blue"></i>
+                        <div><h1 class="font-serif font-bold text-xl text-academy-blue leading-tight">Noor-e-Fatima</h1><p class="text-xs text-gray-500 font-medium uppercase tracking-wider">Academy</p></div>
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Home</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">About Us</a>
+                    <a href="programs.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Programs</a>
+                    <a href="faculty.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Faculty</a>
+                    <a href="admissions.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Admissions</a>
+                    <a href="results.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Results</a>
+                    <a href="gallery.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Gallery</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-academy-blue font-medium transition-colors">Contact</a>
+                </nav>
+                <div class="md:hidden flex items-center"><button id="mobile-menu-btn" class="text-gray-600 hover:text-academy-blue focus:outline-none"><i data-lucide="menu" class="h-6 w-6"></i></button></div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Home</a>
+                <a href="about.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">About Us</a>
+                <a href="programs.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Programs</a>
+                <a href="faculty.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Faculty</a>
+                <a href="admissions.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Admissions</a>
+                <a href="results.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Results</a>
+                <a href="gallery.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Gallery</a>
+                <a href="contact.html" class="nav-link block px-3 py-2 text-base font-medium text-gray-600">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow">
+        <!-- Page Header -->
+        <div class="bg-academy-blue text-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="font-serif text-4xl font-bold mb-4">About Us</h1>
+                <p class="text-blue-200 max-w-2xl mx-auto">Discover the history, mission, and core values that drive Noor-e-Fatima Academy's commitment to academic excellence.</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
+                <div>
+                    <h2 class="font-serif text-3xl font-bold text-academy-blue mb-6">Our Story</h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Founded with a vision to provide accessible, high-quality education, Noor-e-Fatima Academy has grown from a humble tutoring center into one of the region's most trusted educational institutions. Over the past 15 years, we have guided thousands of students toward their academic goals.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        We believe that education is not just about passing exams, but about building confidence, character, and a lifelong love for learning. Our structured curriculum and dedicated faculty ensure that every child's potential is fully realized.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=800" alt="Academy Building" class="rounded-xl shadow-lg border-4 border-white">
+                </div>
+            </div>
+
+            <!-- Vision & Mission -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+                <div class="bg-white p-8 rounded-xl shadow-md border-l-4 border-academy-blue">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i data-lucide="eye" class="h-6 w-6 text-academy-blue"></i>
+                        <h3 class="font-serif text-2xl font-bold text-gray-900">Our Vision</h3>
+                    </div>
+                    <p class="text-gray-600">To be the leading educational coaching center recognized for academic rigor, ethical values, and producing future leaders who contribute positively to society.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md border-l-4 border-academy-gold">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i data-lucide="flag" class="h-6 w-6 text-academy-gold"></i>
+                        <h3 class="font-serif text-2xl font-bold text-gray-900">Our Mission</h3>
+                    </div>
+                    <p class="text-gray-600">To provide a supportive, disciplined, and enriching learning environment where every student is mentored by expert educators to achieve top academic results.</p>
+                </div>
+            </div>
+
+            <!-- Founder's Message -->
+            <div class="bg-blue-50 rounded-2xl p-8 md:p-12">
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="w-32 h-32 md:w-48 md:h-48 flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400" alt="Founder Portrait" class="rounded-full w-full h-full object-cover shadow-md border-4 border-white">
+                    </div>
+                    <div>
+                        <i data-lucide="quote" class="h-10 w-10 text-academy-blue opacity-20 mb-4"></i>
+                        <h3 class="font-serif text-2xl font-bold text-academy-blue mb-2">Message from the Director</h3>
+                        <p class="text-gray-700 italic mb-4 text-lg">
+                            "At Noor-e-Fatima, we don't just teach subjects; we mentor individuals. We understand the trust parents place in us when they enroll their children, and we honor that trust by ensuring no stone is left unturned in their academic preparation. Success is a journey we embark on together."
+                        </p>
+                        <p class="font-bold text-gray-900">Dr. Muhammad Ali</p>
+                        <p class="text-gray-500 text-sm">Founder & Managing Director</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER (Same as Index) -->
+    <footer class="bg-academy-blue text-white mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-4"><i data-lucide="book-open" class="h-6 w-6 text-academy-gold"></i><h2 class="font-serif font-bold text-xl text-white">Noor-e-Fatima</h2></div>
+                    <p class="text-blue-200 text-sm mb-4">Empowering minds, shaping futures. A premier coaching academy committed to academic excellence.</p>
+                </div>
+                <div>
+                    <h3 class="font-serif font-semibold text-lg mb-4 text-academy-gold">Quick Links</h3>
+                    <ul class="space-y-2 text-sm text-blue-200">
+                        <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="programs.html" class="hover:text-white transition-colors">Programs</a></li>
+                        <li><a href="admissions.html" class="hover:text-white transition-colors">Admissions</a></li>
+                        <li><a href="results.html" class="hover:text-white transition-colors">Results</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-serif font-semibold text-lg mb-4 text-academy-gold">Contact Us</h3>
+                    <ul class="space-y-2 text-sm text-blue-200">
+                        <li class="flex items-start gap-2"><i data-lucide="map-pin" class="h-4 w-4 mt-1 flex-shrink-0"></i><span>Sukkur IBA University, Sukkur</span></li>
+                        <li class="flex items-center gap-2"><i data-lucide="phone" class="h-4 w-4 flex-shrink-0"></i><span>+92 312 4391708</span></li>
+                        <li class="flex items-center gap-2"><i data-lucide="mail" class="h-4 w-4 flex-shrink-0"></i><span>engineeryasin2029@gmail.com</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-serif font-semibold text-lg mb-4 text-academy-gold">Follow Us</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://youtube.com/@engineer_yasin?si=4Du0AQ-ca9ffW3Ek" target="_blank" class="text-blue-200 hover:text-white transition-colors"><i data-lucide="youtube" class="h-5 w-5"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammad-yasin-595633384" target="_blank" class="text-blue-200 hover:text-white transition-colors"><i data-lucide="linkedin" class="h-5 w-5"></i></a>
+                        <a href="https://github.com/Muhammad-Yasin-EE" target="_blank" class="text-blue-200 hover:text-white transition-colors"><i data-lucide="github" class="h-5 w-5"></i></a>
+                        <a href="https://chat.whatsapp.com/IzPd4vwXbrjGhAkanhYvTp" target="_blank" class="text-blue-200 hover:text-white transition-colors"><i data-lucide="message-square" class="h-5 w-5"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center text-sm text-blue-300"><p>&copy; 2026 Noor-e-Fatima Academy. All rights reserved.</p></div>
+        </div>
+    </footer>
+    <a href="https://wa.me/923124391708" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors z-50 flex items-center justify-center"><i data-lucide="message-circle" class="h-6 w-6"></i></a>
+    <script src="js/main.js"></script><script>lucide.createIcons();</script>
+</body>
+</html>
